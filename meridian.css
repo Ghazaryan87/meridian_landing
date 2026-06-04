@@ -399,7 +399,7 @@ section{ position:relative; }
 /* ============================================================
    INTEGRATIONS wall
    ============================================================ */
-.intg-wall{ display:grid; grid-template-columns:repeat(8,1fr); gap:12px; margin-top:8px; }
+.intg-wall{ display:grid; grid-template-columns:repeat(8,1fr); gap:12px; margin-top:16px; }
 .intg{
   aspect-ratio:1; border:1px solid var(--line); border-radius:13px;
   background:var(--bg-1); display:grid; place-items:center; position:relative;
@@ -417,7 +417,7 @@ section{ position:relative; }
 .intg:hover .intg-name{ opacity:1; transform:none; }
 .intg-more{ font-family:var(--font-mono); font-size:13px; color:var(--text-dim); flex-direction:column; gap:2px; }
 .intg-more b{ font-size:19px; color:var(--accent); }
-.intg-cats{ display:flex; flex-wrap:wrap; gap:8px; margin-top:26px; }
+.intg-cats{ display:flex; flex-wrap:wrap; gap:8px; margin-top:20px; }
 .intg-cat{ font-family:var(--font-mono); font-size:12px; padding:7px 13px; border-radius:999px; border:1px solid var(--line); color:var(--text-dim); background:var(--bg-1); }
 .intg-cat.on{ border-color:var(--accent); color:var(--accent); background:color-mix(in oklab,var(--accent) 8%, transparent); }
 
