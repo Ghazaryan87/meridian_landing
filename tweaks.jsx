@@ -4,7 +4,7 @@
 // (CSS vars + data-attributes) so the whole page reacts.
 
 const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
-  "accent": "#34e3b0",
+  "accent": "#6b9bff",
   "theme": "dark",
   "font": "signal",
   "hero": "split",
