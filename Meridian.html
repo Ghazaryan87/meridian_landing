@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" data-font="signal" data-hero="split">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Meridian — Unified observability for distributed systems</title>
+<meta name="description" content="Meridian is the unified observability platform for SREs and platform teams. One agent for metrics, traces, logs and infrastructure — with AI that explains incidents in plain language. Transparent pricing. Start free." />
+<meta name="theme-color" content="#07090d" />
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Meridian — Unified observability for distributed systems" />
+<meta property="og:description" content="One agent. Metrics, traces, logs, infra and AI root-cause in a single pane. Cut MTTR by 60%. Transparent, predictable pricing." />
+<meta property="og:site_name" content="Meridian" />
+<meta name="twitter:card" content="summary_large_image" />
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org","@type":"SoftwareApplication",
+  "name":"Meridian","applicationCategory":"DeveloperApplication",
+  "operatingSystem":"Cloud","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},
+  "aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"1240"},
+  "description":"Unified observability platform — metrics, traces, logs, infrastructure and AI root-cause analysis from a single agent."
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="meridian.css" />
+</head>
+<body>
+<div class="bg-field" aria-hidden="true"></div>
+
+<!-- ============== HEADER ============== -->
+<header class="hdr" id="hdr">
+  <div class="wrap hdr-in">
+    <a class="brand" href="#top" aria-label="Meridian home">
+      <svg class="logo" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+        <circle cx="16" cy="16" r="14" stroke="var(--accent)" stroke-width="1.5" opacity=".4"/>
+        <path d="M3 18 L11 18 L14 9 L18 23 L21 14 L24 18 L29 18" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      Meridian
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#platform">Platform</a>
+      <a href="#why">Why Meridian</a>
+      <a href="#integrations">Integrations</a>
+      <a href="#customers">Customers</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#docs">Docs</a>
+    </nav>
+    <div class="hdr-cta">
+      <a href="#" class="signin">Sign in</a>
+      <a href="#demo" class="btn btn-ghost">Book a demo</a>
+      <a href="#start" class="btn btn-primary">Start free</a>
+      <button class="menu-btn" aria-label="Menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ============== HERO ============== -->
+<section class="sec hero" id="start">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow reveal in">Unified observability platform</span>
+        <h1 class="reveal in" data-d="1" id="hero-headline">See every signal. <span class="hl">Solve every incident.</span></h1>
+        <p class="hero-sub reveal in" data-d="2" id="hero-sub">Meridian unifies metrics, traces, logs and infrastructure behind a single agent — with AI that explains incidents in plain language. Less tooling, fewer blind spots, faster root cause.</p>
+        <div class="hero-cta reveal in" data-d="3">
+          <a href="#start" class="btn btn-primary btn-lg btn-arrow">Start free trial
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a href="#how" class="btn btn-ghost btn-lg">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M10 9l5 3-5 3z" fill="currentColor" stroke="none"/></svg>
+            See how it works
+          </a>
+        </div>
+        <div class="hero-note reveal in" data-d="4">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+          No credit card · Full platform for 14 days · 5-minute install
+        </div>
+      </div>
+
+      <!-- Hero dashboard -->
+      <div class="hero-visual reveal in" data-d="2">
+        <div class="dash panel">
+          <div class="dash-glow" aria-hidden="true"></div>
+          <div class="dash-head">
+            <span class="panel-title">meridian · prod-us-east</span>
+            <div class="panel-tag"><span class="dot live"></span> live</div>
+            <div class="seg" role="tablist" aria-label="time range">
+              <span>1h</span><span class="on">6h</span><span>24h</span>
+            </div>
+          </div>
+
+          <div class="kpis">
+            <div class="kpi">
+              <div class="k-lbl"><span class="dot" style="background:var(--healthy)"></span> Requests / s</div>
+              <div class="k-val"><span class="js-count" data-to="48210" data-fmt="int">0</span></div>
+              <div class="k-delta up"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 15l6-6 6 6"/></svg> 4.2% vs 6h</div>
+            </div>
+            <div class="kpi">
+              <div class="k-lbl"><span class="dot" style="background:var(--warn)"></span> p99 latency</div>
+              <div class="k-val"><span class="js-count" data-to="182" data-fmt="int">0</span><small>ms</small></div>
+              <div class="k-delta warn"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg> 11ms drift</div>
+            </div>
+            <div class="kpi">
+              <div class="k-lbl"><span class="dot" style="background:var(--healthy)"></span> Error rate</div>
+              <div class="k-val"><span class="js-count" data-to="0.03" data-fmt="pct">0</span><small>%</small></div>
+              <div class="k-delta up"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg> stable</div>
+            </div>
+          </div>
+
+          <div class="dash-chart">
+            <div class="ch-top">
+              <h4>Service latency · checkout-api</h4>
+              <div class="lgnd"><span><i style="background:var(--accent)"></i>p50</span><span><i style="background:var(--info)"></i>p99</span></div>
+            </div>
+            <svg class="areachart" id="heroArea" viewBox="0 0 600 120" preserveAspectRatio="none" aria-hidden="true"></svg>
+          </div>
+
+          <div class="dash-foot">
+            <div class="live-row"><span class="dot live"></span> 1,284 hosts</div>
+            <div class="live-row" style="color:var(--info)"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> 2.1M spans/s</div>
+            <div class="ev">anomaly auto-resolved · 38s ago</div>
+          </div>
+        </div>
+
+        <!-- floating cards -->
+        <div class="float-card fc-alert">
+          <div class="fc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
+          <div><div class="fc-t">root cause</div><div class="fc-v">Found in 38s</div></div>
+        </div>
+        <div class="float-card fc-trace">
+          <div class="fc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h4l3-7 4 14 3-7h4"/></svg></div>
+          <div><div class="fc-t">distributed trace</div><div class="fc-v">14 services mapped</div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- trust strip -->
+    <div class="trust reveal">
+      <div class="trust-line">Trusted by platform teams at</div>
+      <div class="logos" id="trustLogos"></div>
+      <div class="trust-metrics">
+        <div class="tmetric"><span class="dot live"></span> Monitors <b>2B+</b> events / day</div>
+        <div class="tmetric"><svg class="soc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6z"/><path d="M9 12l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg> SOC 2 Type II</div>
+        <div class="tmetric"><b>99.99%</b> ingest uptime</div>
+        <div class="tmetric"><b>4.8/5</b> on G2 · 1,240 reviews</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap"><div class="divider"></div></div>
+
+<!-- ============== PROBLEM ============== -->
+<section class="sec" id="how">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">The observability tax</span>
+      <h2 class="section-title">Your systems are distributed. Your visibility shouldn't be.</h2>
+      <p class="lede">Modern stacks throw signals from a hundred places. Most teams stitch together five tools to read them — and still get paged at 3am with no idea why.</p>
+    </div>
+    <div class="prob-grid">
+      <div class="prob reveal" data-d="1">
+        <svg class="pico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+        <div class="pn">01</div><h3>Fragmented tooling</h3>
+        <p>Metrics in one vendor, traces in another, logs in a third. Context dies in the gaps between tabs.</p>
+      </div>
+      <div class="prob reveal" data-d="2">
+        <svg class="pico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v6m0 8v6M2 12h6m8 0h6"/><circle cx="12" cy="12" r="3"/></svg>
+        <div class="pn">02</div><h3>Alert fatigue</h3>
+        <p>Thousands of noisy thresholds. The one alert that matters is buried under a hundred that don't.</p>
+      </div>
+      <div class="prob reveal" data-d="3">
+        <svg class="pico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+        <div class="pn">03</div><h3>Slow root cause</h3>
+        <p>MTTR measured in hours. Engineers grep logs and eyeball graphs while the incident burns.</p>
+      </div>
+      <div class="prob reveal" data-d="4">
+        <svg class="pico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7S2 12 2 12z"/><path d="M4 4l16 16" stroke-linecap="round"/></svg>
+        <div class="pn">04</div><h3>Blind spots</h3>
+        <p>Ephemeral pods, serverless, third-party APIs. The thing that breaks is the thing you weren't watching.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== PILLARS (tabbed) ============== -->
+<section class="sec" id="platform">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">One platform, five pillars</span>
+      <h2 class="section-title">Everything you need to run production — in a single pane.</h2>
+      <p class="lede">Deploy one agent and the whole stack lights up. Each pillar shares the same data model, so a metric, a trace and a log line all point at the same root cause.</p>
+    </div>
+
+    <div class="pillars">
+      <div class="pill-tabs" role="tablist" aria-label="Platform capabilities" id="pillTabs">
+        <!-- tabs injected -->
+      </div>
+      <div class="pill-stage panel" id="pillStage">
+        <!-- panels injected -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap"><div class="divider"></div></div>
+
+<!-- ============== DIFFERENTIATOR ============== -->
+<section class="sec" id="why">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Why teams switch</span>
+      <h2 class="section-title">One agent. Honest pricing. Answers in plain English.</h2>
+      <p class="lede">We built Meridian for the things legacy observability got wrong — sprawling agents, surprise invoices, and dashboards that show you everything except the cause.</p>
+    </div>
+
+    <div class="diff-grid">
+      <div class="reveal panel" style="padding:6px 14px 14px">
+        <table class="cmp">
+          <thead>
+            <tr><th>Capability</th><th class="us">Meridian</th><th>Legacy APM</th></tr>
+          </thead>
+          <tbody id="cmpBody"></tbody>
+        </table>
+      </div>
+      <div class="reveal" data-d="1">
+        <ul class="wedge">
+          <li><span class="wk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span><b>Single unified agent.</b> One install captures metrics, traces, logs and host telemetry. No five-sidecar sprawl, no version drift.</span></li>
+          <li><span class="wk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span><b>Automatic dependency mapping.</b> Meridian discovers your service graph from real traffic — no manual instrumentation to keep current.</span></li>
+          <li><span class="wk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span><b>Transparent, predictable pricing.</b> Flat per-host with included data. No per-custom-metric tolls, no end-of-month surprise bill.</span></li>
+          <li><span class="wk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span><b>AI that explains, not just alerts.</b> Every incident gets a plain-language root-cause summary with the exact spans, deploys and logs that caused it.</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== MTTR DEMO ============== -->
+<section class="sec" id="rootcause">
+  <div class="wrap">
+    <div class="mttr">
+      <div class="reveal">
+        <span class="eyebrow">Root-cause, automated</span>
+        <h2 class="section-title" style="margin:16px 0 10px">From alert to answer<br/>before the page even lands.</h2>
+        <p class="lede" style="margin-bottom:24px">When latency spikes, Meridian correlates the anomaly across traces, deploys and logs and writes you the answer. Watch a real incident resolve.</p>
+        <div class="mttr-stat">−60<sup>% MTTR</sup></div>
+        <p style="color:var(--text-dim);font-size:14.5px;margin-top:6px">Median time-to-resolution across teams in their first quarter on Meridian.</p>
+      </div>
+
+      <div class="mttr-demo panel reveal" data-d="1">
+        <div class="panel-bar">
+          <div class="panel-dots"><i></i><i></i><i></i></div>
+          <span class="panel-title">incident · INC-4471 · checkout-api</span>
+          <span class="panel-tag" id="mttrStatus"><span class="dot" style="background:var(--warn)"></span> investigating</span>
+        </div>
+        <div class="timeline">
+          <div class="tl-track"><div class="tl-fill" id="mttrFill"></div></div>
+          <div class="tl-marks"><span>00:00 anomaly</span><span id="mttrClock">00:38 resolved</span></div>
+          <div class="tl-steps" id="mttrSteps"></div>
+          <div style="margin-top:18px">
+            <button class="btn btn-ghost mttr-replay" id="mttrReplay">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg>
+              Replay incident
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap"><div class="divider"></div></div>
+
+<!-- ============== INTEGRATIONS ============== -->
+<section class="sec" id="integrations">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">700+ integrations</span>
+      <h2 class="section-title">If it emits a signal, Meridian reads it.</h2>
+      <p class="lede">Cloud, containers, orchestration, queues, databases, every major language and framework. Auto-discovered the moment the agent comes online.</p>
+    </div>
+    <div class="intg-wall reveal" id="intgWall"></div>
+    <div class="intg-cats reveal" data-d="1" id="intgCats"></div>
+  </div>
+</section>
+
+<!-- ============== SOCIAL PROOF ============== -->
+<section class="sec" id="customers">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Proof, not promises</span>
+      <h2 class="section-title">The teams running the busiest systems run them on Meridian.</h2>
+    </div>
+    <div class="proof-grid">
+      <div class="quote reveal" data-d="1">
+        <div class="stars" aria-label="5 out of 5">★★★★★</div>
+        <blockquote>"We collapsed four tools into Meridian and our on-call stopped dreading the pager. Root-cause that took an hour now takes a minute — the AI summary is usually right."</blockquote>
+        <div class="who"><span class="av">PM</span><div><b>Priya Menon</b><span>Staff SRE · Northwind</span></div></div>
+      </div>
+      <div class="quote reveal" data-d="2">
+        <div class="stars" aria-label="5 out of 5">★★★★★</div>
+        <blockquote>"The single agent was the whole sell. One rollout, every host instrumented, and a bill I can actually predict. Finance stopped asking why observability cost more than compute."</blockquote>
+        <div class="who"><span class="av">DK</span><div><b>Daniel Koch</b><span>Platform Lead · Vanta Freight</span></div></div>
+      </div>
+      <div class="quote reveal" data-d="3">
+        <div class="stars" aria-label="5 out of 5">★★★★★</div>
+        <blockquote>"Automatic dependency mapping caught a failure path we didn't even know existed. Meridian found the blind spot before our customers did."</blockquote>
+        <div class="who"><span class="av">AO</span><div><b>Amara Okafor</b><span>Director of Eng · Helio Pay</span></div></div>
+      </div>
+
+      <div class="case reveal">
+        <div class="c-lead">
+          <div class="clogo" style="font-family:var(--font-display);font-weight:800;font-size:20px;letter-spacing:-.03em">Helio<span style="color:var(--accent)">Pay</span></div>
+          <p>Payments platform processing 9M transactions a day migrated off three vendors in a weekend.</p>
+        </div>
+        <div class="cstat"><div class="cs-v">−60%</div><div class="cs-l">Mean time to resolution</div></div>
+        <div class="cstat"><div class="cs-v">4→1</div><div class="cs-l">Tools consolidated</div></div>
+        <div class="cstat"><div class="cs-v">$310k</div><div class="cs-l">Annual tooling saved</div></div>
+      </div>
+    </div>
+
+    <div class="ratings reveal" data-d="1">
+      <div class="rating"><span class="r-score">4.8</span><span class="r-stars">★★★★★</span><span class="r-src">G2 · 1,240 reviews</span></div>
+      <div class="rating"><span class="r-score">4.7</span><span class="r-stars">★★★★★</span><span class="r-src">Gartner Peer Insights</span></div>
+      <div class="rating"><span class="r-score">#1</span><span class="r-src">Momentum Leader · Observability</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap"><div class="divider"></div></div>
+
+<!-- ============== PERSONAS ============== -->
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Built for the whole on-call</span>
+      <h2 class="section-title">One platform, every role finds their view.</h2>
+    </div>
+    <div class="persona-grid" id="personaGrid"></div>
+  </div>
+</section>
+
+<!-- ============== SECURITY ============== -->
+<section class="sec sec-band">
+  <div class="wrap">
+    <div class="sec-grid">
+      <div class="reveal">
+        <span class="eyebrow">Security &amp; compliance</span>
+        <h2 class="section-title" style="margin:16px 0 14px">Enterprise-grade by default.</h2>
+        <p class="lede">SOC 2 Type II and ISO 27001 audited, GDPR-ready, with regional data residency in the US, EU and APAC. Encryption in transit and at rest, SSO/SCIM, and granular RBAC on every dataset. Your telemetry never leaves your chosen region.</p>
+      </div>
+      <div class="badges reveal" data-d="1">
+        <div class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6z"/><path d="M9 12l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg><b>SOC 2</b><span>Type II</span></div>
+        <div class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6" stroke-linecap="round" stroke-linejoin="round"/></svg><b>ISO 27001</b><span>Certified</span></div>
+        <div class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3a9 9 0 1 0 9 9"/><path d="M12 7v5l3 2" stroke-linecap="round"/></svg><b>GDPR</b><span>Compliant</span></div>
+        <div class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg><b>HIPAA</b><span>Ready</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== PRICING ============== -->
+<section class="sec" id="pricing">
+  <div class="wrap">
+    <div class="sec-head reveal" style="text-align:center;margin-inline:auto">
+      <span class="eyebrow" style="justify-content:center">Pricing you can predict</span>
+      <h2 class="section-title">Flat per-host. Data included. No surprise bill.</h2>
+      <p class="lede" style="margin-inline:auto">Start free, scale on a price you can model in a spreadsheet. Custom metrics, traces and 15-day retention are in the box — not metered line items.</p>
+    </div>
+    <div class="price-grid">
+      <div class="tier reveal" data-d="1">
+        <div class="t-name">Free</div>
+        <div class="t-price"><span class="amt">$0</span><span class="per">forever</span></div>
+        <p class="t-desc">For side projects and first installs. Full platform, generous limits.</p>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Up to 5 hosts</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Metrics, traces &amp; logs</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> 3-day retention</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Community support</li>
+        </ul>
+        <a href="#start" class="btn btn-ghost">Start free</a>
+      </div>
+      <div class="tier feat reveal" data-d="2">
+        <div class="t-name">Pro <span class="t-badge">Most popular</span></div>
+        <div class="t-price"><span class="amt">$18</span><span class="per">/ host / mo</span></div>
+        <p class="t-desc">For teams running production. Everything metered-free.</p>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Unlimited hosts &amp; custom metrics</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> AI root-cause &amp; anomaly detection</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> 15-day retention, included</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> SSO, RBAC &amp; priority support</li>
+        </ul>
+        <a href="#start" class="btn btn-primary">Start 14-day trial</a>
+      </div>
+      <div class="tier reveal" data-d="3">
+        <div class="t-name">Enterprise</div>
+        <div class="t-price"><span class="amt">Custom</span></div>
+        <p class="t-desc">For regulated and high-scale orgs. Bring your own region.</p>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Volume pricing &amp; committed-use</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Data residency &amp; HIPAA BAA</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Custom retention &amp; audit logs</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Dedicated SE &amp; 99.99% SLA</li>
+        </ul>
+        <a href="#demo" class="btn btn-ghost">Talk to sales</a>
+      </div>
+    </div>
+    <p class="price-note">Every plan includes the full agent and all five pillars. <a href="#pricing" style="color:var(--accent)">See full pricing →</a></p>
+  </div>
+</section>
+
+<!-- ============== FINAL CTA ============== -->
+<section class="sec final" id="demo">
+  <div class="wrap">
+    <div class="final-card reveal">
+      <span class="eyebrow" style="justify-content:center">Get started</span>
+      <h2>Install the agent.<br/>Watch your stack light up.</h2>
+      <p>Five minutes from signup to your first trace. Free for 14 days, no credit card — or book a live walkthrough with an engineer who's run systems like yours.</p>
+      <div class="final-cta">
+        <a href="#start" class="btn btn-primary btn-lg btn-arrow">Start free trial
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a href="#demo" class="btn btn-ghost btn-lg">Book a demo</a>
+      </div>
+      <div class="hero-note" style="margin-top:18px">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+        No credit card · SOC 2 Type II · Cancel anytime
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============== FOOTER ============== -->
+<footer class="ft" id="docs">
+  <div class="wrap">
+    <div class="ft-top">
+      <div class="ft-brand">
+        <a class="brand" href="#top">
+          <svg class="logo" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <circle cx="16" cy="16" r="14" stroke="var(--accent)" stroke-width="1.5" opacity=".4"/>
+            <path d="M3 18 L11 18 L14 9 L18 23 L21 14 L24 18 L29 18" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          Meridian
+        </a>
+        <p>Unified observability for the teams that keep production running.</p>
+        <div class="ft-status"><span class="dot live"></span> All systems operational · status.meridian.io</div>
+      </div>
+      <div class="ft-col">
+        <h5>Product</h5>
+        <a href="#platform">Platform</a><a href="#integrations">Integrations</a><a href="#pricing">Pricing</a><a href="#rootcause">AI root-cause</a><a href="#">Changelog</a>
+      </div>
+      <div class="ft-col">
+        <h5>Developers</h5>
+        <a href="#docs">Documentation</a><a href="#">API reference</a><a href="#">Status page</a><a href="#">Open source</a><a href="#">SDKs</a>
+      </div>
+      <div class="ft-col">
+        <h5>Company</h5>
+        <a href="#customers">Customers</a><a href="#">Blog</a><a href="#">Careers</a><a href="#">Security</a><a href="#">Contact</a>
+      </div>
+      <div class="ft-col">
+        <h5>Legal</h5>
+        <a href="#">Privacy</a><a href="#">Terms</a><a href="#">DPA</a><a href="#">Sub-processors</a><a href="#">Trust center</a>
+      </div>
+    </div>
+    <div class="ft-bot">
+      <span>© 2026 Meridian Systems, Inc.</span>
+      <span class="mono" style="color:var(--text-mute-solid)">SOC 2 · ISO 27001 · GDPR</span>
+      <div class="sp">
+        <a href="#">Twitter</a><a href="#">GitHub</a><a href="#">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- React (for Tweaks island only) -->
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+<div id="tweaks-root"></div>
+
+<script src="meridian.js"></script>
+<script type="text/babel" src="tweaks-panel.jsx"></script>
+<script type="text/babel" src="tweaks.jsx"></script>
+
+<template id="__bundler_thumbnail" data-bg-color="#07090d">
+  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1200" height="800" fill="#07090d"/>
+    <circle cx="600" cy="400" r="190" fill="none" stroke="#34e3b0" stroke-width="10" opacity="0.35"/>
+    <path d="M380 430 L520 430 L575 280 L660 540 L715 380 L760 430 L820 430"
+          fill="none" stroke="#34e3b0" stroke-width="22"
+          stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</template>
+
+<style id="__om-edit-overrides"></style>
+</body>
+</html>
