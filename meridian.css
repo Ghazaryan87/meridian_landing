@@ -25,7 +25,7 @@
 
 /* ---- Accent (swapped via --accent on :root) ----------------- */
 :root{
-  --accent: #34e3b0;          /* Aurora teal-green (default) */
+  --accent: #6b9bff;          /* Aurora teal-green (default) */
   --accent-ink: #04130d;      /* text on accent fills */
 }
 
